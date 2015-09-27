@@ -1,0 +1,98 @@
+html {
+    margin-right: 0.5em;
+}
+
+html, body {
+    height: 100%;
+    font-family: -apple-system, ".SFNSDisplay-Regular", sans-serif;
+    line-height: 1;
+}
+
+body {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    background-image: url("../img/mom.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: bottom right;
+    margin: 0;
+    padding: 0;
+
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+
+}
+
+a {
+    color:#444;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+
+        .handle {
+            color: #444;
+        }
+    }
+
+}
+
+.wrap {
+    max-width: 300px;
+    border: 0.8em solid rgba(33, 33, 33, 0.7);
+    padding: 4em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 24%;
+    transform: translateX(-50%);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.name {
+    line-height: 1.6;
+    font-size: 2rem;
+}
+
+.tagline {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+address {
+    padding: 1em 0;
+    line-height: 1.5;
+    font-style: normal;
+    color: #444;
+    margin-bottom: 0.5em;
+}
+
+.social {
+    line-height: 1.5;
+}
+
+.handle {
+    color: #bbb;
+    &:before {
+        content: " – ";
+    }
+}
