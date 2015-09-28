@@ -1,5 +1,5 @@
 html {
-    margin-right: 0.5em;
+    margin-right: 2%;
 }
 
 html, body {
@@ -10,12 +10,14 @@ html, body {
 
 body {
     display: flex;
-    // justify-content: center;
     align-items: center;
-    background-image: url("../img/mom.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-position: bottom right;
+
+    @media (min-width: 1050px) {
+        background-image: url("../img/mom.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 60%;
+        background-position: bottom right;
+    }
     margin: 0;
     padding: 0;
 
