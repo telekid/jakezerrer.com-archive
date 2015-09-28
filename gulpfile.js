@@ -8,19 +8,19 @@ var sass        = require('gulp-sass');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./static"
     });
 
-    gulp.watch("app/scss/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("app/js/*.js").on('change', browserSync.reload);
+    gulp.watch("static/scss/*.scss", ['sass']);
+    gulp.watch("static/*.html").on('change', browserSync.reload);
+    gulp.watch("static/js/*.js").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("app/scss/*.scss")
+    return gulp.src("static/scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("app/css"))
+        .pipe(gulp.dest("static/css"))
         .pipe(browserSync.stream());
 });
 
